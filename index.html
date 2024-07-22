@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tasks</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="sticky-header">Sticky Header</header>
+    <header class="header">
+      <h1 id="tasks">Tasks</h1>
+    </header>
+    <nav class="nav">
+      <a href="#forms">Forms</a>
+      <a href="#tables">Tables</a>
+      <a href="#lists">Lists</a>
+      <a href="#media">Media</a>
+    </nav>
+    <main>
+      <section id="forms">
+        <h2>create forms</h2>
+        <label for="name"> Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="text"
+        /><br /><br />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="@gmail.com"
+        /><br /><br />
+
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="123-456-7890"
+        /><br /><br />
+
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate" /><br /><br />
+
+        <label for="gender">Gender:</label><br />
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br /><br />
+
+        <label for="favcolor">Favorite Color:</label><br />
+        <input type="color" id="favcolor" name="favcolor" /><br /><br />
+
+        <label for="bio">Bio:</label><br />
+        <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br /><br />
+
+        <label for="language">Select a language:</label><br />
+        <select id="language" name="language">
+          <option value="html">html</option>
+          <option value="python">python</option>
+          <option value="java">java</option>
+          <option value="c">c</option></select
+        ><br /><br />
+
+        <label for="file">Upload a file:</label><br />
+        <input type="file" id="file" name="file" /><br /><br />
+
+        <input type="submit" value="Submit" />
+      </section>
+      <section id="tables">
+        <h2>Create Table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Heading 1</th>
+              <th>Heading 2</th>
+              <th>Heading 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Row 1</td>
+              <td>Row 2</td>
+              <td>Row 3</td>
+            </tr>
+            <tr>
+              <td>Row 4</td>
+              <td>Row 5</td>
+              <td>Row 6</td>
+            </tr>
+            <tr>
+              <td>Row 7</td>
+              <td>Row 8</td>
+              <td>Row 9</td>
+            </tr>
+            <tr>
+              <td>Row 10</td>
+              <td>Row 11</td>
+              <td>Row 12</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="lists">
+        <h2>Creating Lists</h2>
+        <h3>ordered lists</h3>
+        <ol>
+          <li>orderer list item1</li>
+          <li>orderer list item2</li>
+          <li>orderer list item2</li>
+          <li>orderer list item4</li>
+          <li>orderer list item5</li>
+        </ol>
+        <h3>unordered lists</h3>
+        <ul>
+          <li>unordered list item 1</li>
+          <li>unordered list item 2</li>
+          <li>unordered list item 3</li>
+          <li>unordered list item 4</li>
+          <li>unordered list item 5</li>
+        </ul>
+        <h3>descript list</h3>
+        <dl>
+          <dt>descript item 1</dt>
+          <dd>description for item 1</dd>
+          <dt>description item 2</dt>
+          <dd>description for item 2</dd>
+        </dl>
+      </section>
+      <section id="media">
+        <h2>Create Media</h2>
+        <h3>create audio element</h3>
+        <audio controls><source src="dummy audio.mp3" /></audio>
+        <h3>create video media</h3>
+        <video controls width="300px" height="260px">
+          <source src="dummy video.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <h1 style="color: darkred">centered box</h1>
+
+      <div class="box">
+        box model <br />
+        with color
+      </div>
+    </main>
+
+    <footer>fixed footer</footer>
+    <script src="script.js"></script>
+    
+    
+  </body>
+</html>
